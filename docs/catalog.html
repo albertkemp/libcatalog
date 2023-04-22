@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fenton Library Catalog</title>
+        <link rel="shorcut icon" href="images/library_icon.png">
+        <style>
+            div {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  width: 700px;
+  height: 600px;
+  border: 1px solid #969696;
+  background: #d9dbda;
+  margin: 10px;
+}
+            img {
+                padding-top: 20px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            h1 {
+                font-size: 100px;
+                text-align: center;
+            }
+            .book[data-borrowed="true"]::before {
+  content: "Unavailable";
+  color: red;
+}
+        </style>
+        </head>
+    <body>
+        <h1>Library Catalog</h1>
+        <h2>Easily choose books and borrow them online, then go pick them up.</h2>
+        <h2>The Catalog:</h2>
+        <h2>Ebooks:</h2>
+        <p>With our great ebooks, you can read books online.</p>
+        <div data-borrowed="false">
+            <img src="images/thelist.png" height="400px">
+            <h2>The List</h2>
+            <p>Albert Kemp</p>
+            <button><a href="thelistsendform.html">Borrow</a></button>
+        </div>
+        <div data-borrowed="false">
+            <img src="images/bermguibirds.jpg" height="400px">
+            <h2>Bermagui Birds</h2>
+            <p>Albert Kemp</p>
+            <button><a href="bermaguibirds.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="images/photographingaustralianbirdlife.jpg" height="400px">
+            <h2>Photographing Australian Birdlife</h2>
+            <p>Albert Kemp</p>
+            <button><a href="photographingbirdlife.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="images/australianbirds.jpg" height="400px">
+            <h2>Australian Birds</h2>
+            <p>Albert Kemp</p>
+            <button><a href="australianbirds.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="images/glimpsesaustralianbirdlife.jpg" height="400px">
+            <h2>Glimpses of Australian Birdlife</h2>
+            <p>Albert Kemp</p>
+            <button><a href="glimpsesaustralianbirdlife.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="images/abookaustralianbirds.jpg" height="400px">
+            <h2>A Book of Australian Birds</h2>
+            <p>Albert Kemp</p>
+            <button><a href="abookaustralianbirds.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="images/funnykoalahelmetedhoneyea.jpg" height="400px">
+            <h2>Funny Koala and Helmeted Honeyeater</h2>
+            <p>Arthur Kemp</p>
+            <button><a href="funnykoalahelmetedhoneyeater.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <h2>Lord of the Cigarettes</h2>
+            <p>Albert Kemp and others</p>
+            <button><a href="lordofthecigarettes.html">Borrow</a></button>
+        </div>
+        <div data-borrowed="false">
+            <img src="newimages/aln1.jpeg" height="400px">
+            <h2>Alon's Giant Glider</h2>
+            <p>Albert Kemp, Leon Roshan</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="newimages/aln2.jpeg" height="400px">
+            <h2>Alon's Glider (BOOK 2)</h2>
+            <p>Albert Kemp, Leon Roshan</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="newimages/aln3.jpeg" height="400px">
+            <h2>Alon's Glider (Book 3)</h2>
+            <p>Albert Kemp</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="newimages/aln4.jpeg" height="400px">
+            <h2>Alon's Glider (Book 4)</h2>
+            <p>Albert Kemp, Leon Roshan</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="newimages/blckcty.jpeg" height="400px">
+            <h2>Block City</h2>
+            <p>Albert Kemp, Samuel Wong</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <div data-borrowed="false">
+            <img src="newimages/brdsmtngal.JPG" height="400px">
+            <h2>Birds of Metung and Surrounds</h2>
+            <p>Albert Kemp</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="newimages/brdsjndbynal.JPG" height="400px">
+            <h2>Birds of Jindabyne and Surrounds</h2>
+            <p>Albert Kemp</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <div data-borrowed="false">
+            <img src="newimages/ar1.jpeg" height="400px">
+            <h2>Arthur No.2</h2>
+            <p>Arthur Kemp</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="newimages/bkltar.jpeg" height="400px">
+            <h2>Booklet</h2>
+            <p>Arthur Kemp</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="newimages/brdsgbral.jpeg" height="400px">
+            <h2>Birds of the GBR</h2>
+            <p>Albert Kemp</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="newimages/cphlpdsgbral.jpeg" height="400px">
+            <h2>Cephalopods of the GBR</h2>
+            <p>Albert Kemp</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="newimages/fshgbral.jpeg" height="400px">
+            <h2>Fish on the GBR</h2>
+            <p>Albert Kemp</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="newimages/lksar.jpeg" height="400px">
+            <h2>Lakes</h2>
+            <p>Arthur Kemp</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="newimages/mnyar.jpeg" height="400px">
+            <h2>Money</h2>
+            <p>Arthur Kemp</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="newimages/nttldar.jpeg" height="400px">
+            <h2>Untitled</h2>
+            <p>Arthur Kemp</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="newimages/plnesal.jpeg" height="400px">
+            <h2>Planes</h2>
+            <p>Albert Kemp</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="newimages/rckts&bnsar.JPG" height="400px">
+            <h2>Rockets and Beans</h2>
+            <p>Arthur Kemp</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="newimages/sthtsthsar.jpeg" height="400px">
+            <h2>I see that. I see this</h2>
+            <p>Arthur Kemp</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="newimages/thcrlrfal.jpeg" height="400px">
+            <h2>The Coral Reef</h2>
+            <p>Albert Kemp</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="newimages/tllsar.jpeg" height="400px">
+            <h2>Tallies</h2>
+            <p>Arthur Kemp</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="newimages/wbsar.jpeg" height="400px">
+            <h2>Webs</h2>
+            <p>Arthur Kemp</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="newimages/yaksar.jpeg" height="400px">
+            <h2>Yaks</h2>
+            <p>Arthur Kemp</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="images/alimericksal.JPG" height="400px">
+            <h2>Albert's Book of Limericks</h2>
+            <p>A book of limericks by Albert Kemp</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div> 
+        <br>
+        <div data-borrowed="false">
+            <img src="images/alpntngsn2.jpg" height="400px">
+            <h2>Albert's Paintings No.2</h2>
+            <p>Albert Kemp</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="images/alpntngsn3.JPG" height="400px">
+            <h2>Albert's Paintings No.3</h2>
+            <p>Albert Kemp</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="images/alpntngsn4.jpg" height="400px">
+            <h2>Albert's Paintings No.4</h2>
+            <p>Albert Kemp</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="images/alpntngsnyeal.jpg" height="400px">
+            <h2>Albert's Paintings Original</h2>
+            <p>Albert Kemp</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="images/alsktchs.JPG" height="400px">
+            <h2>Albert's Sketches</h2>
+            <p>Albert Kemp</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="images/antsal.jpg" height="400px">
+            <h2>Ants</h2>
+            <p>Albert Kemp</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="images/ar.jpg" height="400px">
+            <h2>Arthur</h2>
+            <p>Arthur Kemp</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="images/arkmp1ar.jpg" height="400px">
+            <h2>Arthur Kemp</h2>
+            <p>Arthur Kemp</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="images/arkmp2.JPG" height="400px">
+            <h2>Arthur Kemp</h2>
+            <p>Arthur Kemp</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="images/arkmp3.JPG" height="400px">
+            <h2>Arthur Kemp</h2>
+            <p>Arthur Kemp</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="images/arkmp4.JPG" height="400px">
+            <h2>Arthur Kemp</h2>
+            <p>Arthur Kemp</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="images/arkmpar.jpg" height="400px">
+            <h2>Arthur Kemp</h2>
+            <p>Arthur Kemp</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="images/birdsal.jpg" height="400px">
+            <h2>Birds</h2>
+            <p>Albert Kemp</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="images/brdpntngsal.JPG" height="400px">
+            <h2>Bird Paintings</h2>
+            <p>Albert Kemp</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="images/brdrtal.jpg" height="400px">
+            <h2>Bird Art</h2>
+            <p>Albert Kemp</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="images/btyfbrds.JPG" height="400px">
+            <h2>Beauty of Birds</h2>
+            <p>Albert Kemp</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="images/crcdlsar.jpg" height="400px">
+            <h2>Crocodiles</h2>
+            <p>Arthur Kemp</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="images/diaryal.jpg" height="400px">
+            <h2>Albert's Diary</h2>
+            <p>Albert Kemp</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="images/drwbrdsal.jpg" height="400px">
+            <h2>Drawing Birds in Graphite</h2>
+            <p>Albert Kemp</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="images/drwngbkar.JPG" height="400px">
+            <h2>Drawing Book</h2>
+            <p>Arthur Kemp</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="images/icecrmar.jpg" height="400px">
+            <h2>Icecream Fat Man</h2>
+            <p>Arthur Kemp</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="images/storiesalar1.JPG" height="400px">
+            <h2>Stories by Albert & Arthur Kemp</h2>
+            <p>Albert Kemp, Arthur Kemp.</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="images/strsalarn2.JPG" height="400px">
+            <h2>Stories by Albert & Arthur Kemp No.2</h2>
+            <p>Albert Kemp, Arthur Kemp.</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="images/thcmpltgddrwngbrdsgrphtal.jpg" height="400px">
+            <h2>The Complete Guide to Drawing Birds in Graphite</h2>
+            <p>Albert Kemp</p>
+            <button><a href="borrow.html">Borrow</a></button>
+        </div>
+        <br>
+        <h2>Audiobooks:</h2>
+        <p>Listen to three great selected parts of books in our catalogue. You can listen to them without the need to hold the books. We have three options below.</p>
+        <div data-borrowed="false">
+            <img src="images/storiesalar1.JPG" height="300px">
+            <video src="videos/harryscreamed.mov" controls></video>
+            <h2>Stories by Albert & Arthur Kemp (Harry and the Gecko)</h2>
+            <p>With Albert Kemp, Arthur Kemp</p>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="images/diaryal.jpg" height="300px">
+            <video src="videos/albertdiary.mov" controls></video>
+            <h2>Albert's Diary (The first chapter)</h2>
+            <p>With Albert Kemp</p>
+        </div>
+        <br>
+        <div data-borrowed="false">
+            <img src="images/birdsal.jpg" height="400px">
+            <video src="videos/testsmall.mov" controls></video>
+            <h2>Australian Birds (3 pages)</h2>
+            <p>With Albert Kemp</p>
+        </div>
+        <br>
+        <script>
+            // Replace YOUR_SPREADSHEET_ID and YOUR_SHEET_NAME with the actual values.
+const url = `https://docs.google.com/spreadsheets/d/1bl_sgyOGgedHsoeW8wIF8AUpUYvwB63wCLP-74XVoYg/edit?resourcekey#gid=846365346`;
+
+fetch(url)
+  .then(response => response.text())
+  .then(text => {
+    // Parse the JSON response.
+    const json = JSON.parse(text.substring(47, text.length - 2));
+    // Get the borrowed book codes.
+    const borrowedCodes = json.table.rows.filter(row => row.c[1].v === 'Yes').map(row => row.c[0].v);
+    // Update the data-borrowed attribute of each book element.
+    const bookElements = document.querySelectorAll('.book');
+    bookElements.forEach(element => {
+      const code = element.getAttribute('data-code');
+      if (borrowedCodes.includes(code)) {
+        element.setAttribute('data-borrowed', 'true');
+      } else {
+        element.setAttribute('data-borrowed', 'false');
+      }
+    });
+  })
+  .catch(error => {
+    console.error('Failed to fetch borrowed book list:', error);
+  });
+
+        </script>
+    </body>
+</html>
